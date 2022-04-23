@@ -116,6 +116,7 @@ body {
 .trends, .wares {
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-top: 63px;
 }
 
@@ -132,9 +133,7 @@ body {
 .trends-box {
     display: flex;
     gap: 4px;
-    flex-wrap: wrap;
-    
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
 }
 
@@ -143,7 +142,7 @@ body {
     position: relative;
     flex-direction: column;
     justify-content: flex-end;
-    width: 15%;
+    width: 25%;
     min-height: 320px;
     z-index: 0;
     background-repeat: no-repeat;
@@ -198,7 +197,7 @@ body {
     box-sizing: border-box;
     width: 100%;
     flex-grow: 1;
-    margin-right: 35px;
+    margin-right: 137px;
 }
 /*--------СТАТЬИ-----------------------------------------------------------------------------------*/
 .post-list, .wares-list {
@@ -207,7 +206,7 @@ body {
 }
 
 .post-list-picture {
-    max-width: 390px;    
+    width: 100%;    
   }
 
 .post-list-article {
@@ -472,12 +471,10 @@ p {
 }
 
 /*-----------------------------------НАШИ ИЗДЕЛИЯ--------------------------------*/
-
 .wares-box {
     display: flex;
-    justify-content: space-between;
+    max-width: 1200px;
     margin: 0 15px 0 15px;
-    flex-wrap: wrap;
     gap: 68px;
 }
 

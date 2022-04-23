@@ -1,4 +1,4 @@
-@media (max-width: 1200px) AND (min-width: 641px) {
+@media (max-width: 1200px) AND (min-width: 641px) and (orientation: landscape) {
     body {
         font-size: 14px;
     }
@@ -13,6 +13,10 @@
 
     .header, .content, .footer, .wares {
         padding: 0 35px 0 35px;
+    }
+
+    .content {
+        margin-top: 50px;
     }
     
     .homepage {
@@ -61,32 +65,38 @@
         top: 8px;
     }
 
+    .trends-post {
+        flex-grow: 1;
+        width: 25%;
+    }
+
+    .post-list {
+        flex-direction: column;
+        border-bottom: 3px solid #eeeeee;
+        padding-bottom: 20px;
+    }
+
+    .wares-box {
+        flex-wrap: wrap;
+    }
+
+    .wares-list {
+        flex-grow: 1;
+        width: 40%;
+        max-width: 299px;
+        
+    }
+
+
+}
+
+@media (max-width: 1200px) AND (min-width: 641px) and (orientation: portrait) {
     .trends-box {
         flex-wrap: wrap;
     }
 
     .trends-post {
-        flex: 1 1 auto;
-    }
-
-    .post-list {
-        flex-direction: column;
-    }
-
-    .wares-list {
         flex-grow: 1;
-        max-width: 299px;
-    }
-}
-
-@media (max-width: 1200px) AND (min-width: 641px) and (orientation: portrait) {
-    .trends-post {
-        width: 25%;
-    }
-}
-
-@media (max-width: 1200px) AND (min-width: 641px) and (orientation: landscape) {
-    .trends-post {
-        width: 10%;
+        width: 30%;
     }
 }
